@@ -10,12 +10,7 @@
   <meta property="og:type" content="website">
   <title>Tanmoy Santra | Senior Data & AI Engineer</title>
   <script>
-    (() => {
-      const param = new URLSearchParams(window.location.search).get("scoutTheme");
-      const theme =
-        param || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
-      document.documentElement.setAttribute("data-theme", theme);
-    })();
+    document.documentElement.setAttribute("data-theme", "light");
   </script>
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -36,39 +31,45 @@
     <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
       <a href="#about">About</a>
       <a href="#experience">Experience</a>
-      <a href="#work">Selected work</a>
-      <a href="#cv">CV</a>
-      <a class="nav-contact" href="mailto:tanmoycuat@gmail.com">Contact</a>
+      <a href="#projects">Projects</a>
+      <a href="#training">Training</a>
+      <a href="#tech-stack">Stack</a>
+      <a href="#education">Education</a>
+      <a class="nav-contact" href="#contact">Contact</a>
     </nav>
   </header>
 
   <main id="main">
     <section id="top" class="hero" aria-labelledby="hero-title">
       <div class="hero-grid">
-        <div class="hero-copy reveal">
-          <p class="eyebrow">Stockholm · Data · AI · Platforms</p>
-          <h1 id="hero-title">Tanmoy<br>Santra</h1>
-          <p class="hero-role">Senior Data & AI Engineer</p>
-          <p class="hero-intro">I design enterprise data platforms and applied AI systems that turn complex business processes into reliable, measurable outcomes.</p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#work">Explore selected work <span aria-hidden="true">↘</span></a>
-            <a class="text-link" href="Tanmoy_Stockholm_V4_1.pdf" target="_blank" rel="noreferrer">Open CV <span aria-hidden="true">↗</span></a>
+        <div class="hero-card reveal">
+          <button class="flip-card" type="button" aria-label="Flip card — click to scroll to about section">
+            <span class="flip-card-inner">
+              <span class="flip-card-face flip-card-front">
+                <span class="flip-avatar" aria-hidden="true">TS</span>
+                <span class="flip-name">Tanmoy Santra</span>
+              </span>
+              <span class="flip-card-face flip-card-back">
+                <span class="flip-back-copy">Scroll down and know me better</span>
+                <span class="flip-back-cue">Click to jump ↓</span>
+              </span>
+            </span>
+          </button>
+          <div class="hero-socials">
+            <a href="https://www.linkedin.com/in/tanmoysantra/" target="_blank" rel="noreferrer" aria-label="LinkedIn">in</a>
+            <a href="https://github.com/tanmoycuat" target="_blank" rel="noreferrer" aria-label="GitHub">gh</a>
+            <a href="mailto:tanmoycuat@gmail.com" aria-label="Email">@</a>
           </div>
         </div>
 
-        <div class="hero-visual reveal" aria-label="Abstract data platform visualization">
-          <div class="visual-label">From signal to decision</div>
-          <div class="orbit orbit-one"><span></span></div>
-          <div class="orbit orbit-two"><span></span></div>
-          <div class="data-core">
-            <span>DATA</span>
-            <strong>+</strong>
-            <span>AI</span>
-          </div>
-          <div class="visual-caption">
-            <span>Architecture</span>
-            <span>Automation</span>
-            <span>Adoption</span>
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Stockholm · Data · AI · Platforms</p>
+          <h1 id="hero-title">Hey, I'm Tanmoy</h1>
+          <p class="hero-rotator"><span class="rotator-static">I build</span> <span class="rotator-words" aria-live="polite"></span></p>
+          <p class="hero-intro">I design enterprise data platforms and applied AI systems that turn complex business processes into reliable, measurable outcomes — from discovery and architecture through implementation and adoption.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#contact">Work together <span aria-hidden="true">↗</span></a>
+            <a class="button button-ghost" href="#projects">Projects <span aria-hidden="true">↘</span></a>
           </div>
         </div>
       </div>
@@ -100,6 +101,13 @@
             <h3>Outcome measured</h3>
             <p>Make technical progress visible through quality, speed, and adoption.</p>
           </article>
+        </div>
+        <div class="writing" aria-label="Recent writing">
+          <p class="writing-label">Recent writing</p>
+          <ul class="writing-list">
+            <li><a href="https://www.linkedin.com/in/tanmoysantra/recent-activity/articles/" target="_blank" rel="noreferrer">Graph RAG: The Next Frontier for AI Engineers in Knowledge Retrieval <span aria-hidden="true">↗</span></a></li>
+            <li><a href="https://www.linkedin.com/in/tanmoysantra/recent-activity/articles/" target="_blank" rel="noreferrer">EtLT: A Holistic Data Integration Strategy <span aria-hidden="true">↗</span></a></li>
+          </ul>
         </div>
       </div>
     </section>
@@ -146,113 +154,171 @@
       </div>
     </section>
 
-    <section id="work" class="section section-work" aria-labelledby="work-title">
+    <section id="projects" class="section section-work" aria-labelledby="work-title">
       <div class="section-number">03</div>
       <div class="section-heading reveal">
         <p class="eyebrow">Selected work</p>
         <h2 id="work-title">Systems designed to move real work forward.</h2>
       </div>
-      <div class="project-list reveal">
-        <article class="project">
-          <div class="project-index">A</div>
-          <div class="project-copy">
-            <p class="project-type">Enterprise data platform</p>
-            <h3>Nordic Advisory Analytics</h3>
-            <p>Architected a Microsoft Fabric platform spanning Sweden, Finland, and Norway, with governed semantic models and a unified reporting layer.</p>
-          </div>
-          <ul class="project-tags" aria-label="Technologies">
-            <li>Microsoft Fabric</li><li>Lakehouse</li><li>Power BI</li>
-          </ul>
-        </article>
-        <article class="project">
-          <div class="project-index">B</div>
-          <div class="project-copy">
-            <p class="project-type">AI-assisted valuation</p>
-            <h3>Norway Valuation Model</h3>
-            <p>Designed a Rent Roll Agent that extracts, validates, and interprets property data from spreadsheets, PDFs, and conversations.</p>
-          </div>
-          <ul class="project-tags" aria-label="Technologies">
-            <li>Azure AI Foundry</li><li>OpenAI</li><li>Python</li>
-          </ul>
-        </article>
-        <article class="project">
-          <div class="project-index">C</div>
-          <div class="project-copy">
-            <p class="project-type">Financial controls</p>
-            <h3>Project Overmind</h3>
-            <p>Built an AI workflow for accrual validation, VAT compliance, anomaly detection, and actionable month-end insights.</p>
-          </div>
-          <ul class="project-tags" aria-label="Technologies">
-            <li>Agentic AI</li><li>Finance</li><li>Automation</li>
-          </ul>
-        </article>
-        <article class="project">
-          <div class="project-index">D</div>
-          <div class="project-copy">
-            <p class="project-type">Document intelligence</p>
-            <h3>Contract Processing Automation</h3>
-            <p>Automated clause extraction, risk analysis, summarization, and document generation through secure AI-enabled workflows.</p>
-          </div>
-          <ul class="project-tags" aria-label="Technologies">
-            <li>OpenAI</li><li>Next.js</li><li>REST APIs</li>
-          </ul>
-        </article>
-      </div>
-      <div class="impact-strip reveal">
-        <div><strong>11.4s → 2.8s</strong><span>Document processing time</span></div>
-        <div><strong>14.2k → 3.1k</strong><span>Average input tokens</span></div>
-        <div><strong>3 countries</strong><span>Unified Nordic reporting</span></div>
-      </div>
+
+      <!-- Projects and filters are rendered from the PROJECTS array in script.js.
+           To add a project later, add one object to that array — no HTML changes needed. -->
+      <div class="project-filters reveal" role="tablist" aria-label="Filter projects by category"></div>
+
+      <div class="project-grid reveal"></div>
     </section>
 
-    <section class="section expertise" aria-labelledby="expertise-title">
+    <section id="training" class="section section-training" aria-labelledby="training-title">
       <div class="section-number">04</div>
       <div class="section-heading reveal">
-        <p class="eyebrow">Professional focus</p>
-        <h2 id="expertise-title">A practical stack, chosen around the system.</h2>
+        <p class="eyebrow">Training &amp; enablement</p>
+        <h2 id="training-title">Bridging AI innovation and practical adoption.</h2>
       </div>
-      <div class="expertise-grid reveal">
-        <article>
-          <h3>AI systems</h3>
-          <p>Azure AI Foundry, Azure OpenAI, agentic AI, RAG, prompt engineering, fine-tuning, and vector search.</p>
+      <div class="training-content reveal">
+        <p class="lead">I design and deliver sessions that help teams move from AI curiosity to production-ready practice — hands-on labs, architecture reviews, and adoption playbooks built for real-world impact.</p>
+        <div class="training-chips" aria-label="Enablement topics">
+          <span>Agentic AI Fundamentals</span>
+          <span>Prompt Engineering Lab</span>
+          <span>Lakehouse Architecture</span>
+          <span>AI Adoption Strategy</span>
+          <span>Data Platform Governance</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="tech-stack" class="section expertise" aria-labelledby="expertise-title">
+      <div class="section-number">05</div>
+      <div class="section-heading reveal">
+        <p class="eyebrow">Tech stack</p>
+        <h2 id="expertise-title">The tools and technologies I work with daily.</h2>
+      </div>
+      <div class="stack-grid reveal">
+        <article class="stack-card">
+          <h3>AI &amp; Agents</h3>
+          <p>Copilots, agents &amp; orchestration</p>
+          <div class="stack-items"><span>Azure AI Foundry</span><span>Azure OpenAI</span><span>RAG</span><span>Vector search</span></div>
         </article>
-        <article>
-          <h3>Data platforms</h3>
-          <p>Microsoft Fabric, Databricks, Spark, lakehouse architecture, data warehousing, ETL/ELT, and semantic models.</p>
+        <article class="stack-card">
+          <h3>Data Platforms</h3>
+          <p>Lakehouse &amp; analytics engines</p>
+          <div class="stack-items"><span>Microsoft Fabric</span><span>Databricks</span><span>Spark</span><span>Semantic models</span></div>
         </article>
-        <article>
+        <article class="stack-card">
           <h3>Engineering</h3>
-          <p>Python, SQL, DAX, REST APIs, Azure DevOps, GitHub, CI/CD, containers, Azure, and AWS.</p>
+          <p>Scripting, APIs &amp; pipelines</p>
+          <div class="stack-items"><span>Python</span><span>SQL</span><span>DAX</span><span>REST APIs</span></div>
+        </article>
+        <article class="stack-card">
+          <h3>Cloud</h3>
+          <p>Platforms &amp; core services</p>
+          <div class="stack-items"><span>Azure</span><span>AWS</span><span>Containers</span></div>
+        </article>
+        <article class="stack-card">
+          <h3>BI &amp; Visualization</h3>
+          <p>Reporting &amp; dashboards</p>
+          <div class="stack-items"><span>Power BI</span><span>Analysis Services</span><span>SSIS</span></div>
+        </article>
+        <article class="stack-card">
+          <h3>Delivery</h3>
+          <p>CI/CD &amp; collaboration</p>
+          <div class="stack-items"><span>Azure DevOps</span><span>GitHub</span><span>CI/CD</span></div>
         </article>
       </div>
     </section>
 
-    <section id="cv" class="section cv-section" aria-labelledby="cv-title">
-      <div class="section-number">05</div>
+    <section id="education" class="section section-education" aria-labelledby="education-title">
+      <div class="section-number">06</div>
       <div class="section-heading reveal">
-        <p class="eyebrow">Curriculum vitae</p>
-        <h2 id="cv-title">The detailed professional record.</h2>
+        <p class="eyebrow">Education</p>
+        <h2 id="education-title">Where I learned the fundamentals (and kept going).</h2>
       </div>
-      <div class="cv-layout reveal">
-        <div class="cv-copy">
-          <p>Full experience, education, credentials, selected projects, and technical capabilities.</p>
-          <a class="button button-primary" href="Tanmoy_Stockholm_V4_1.pdf" download>Download CV <span aria-hidden="true">↓</span></a>
-          <a class="text-link" href="Tanmoy_Stockholm_V4_1.pdf" target="_blank" rel="noreferrer">Open in a new tab <span aria-hidden="true">↗</span></a>
+      <div class="timeline reveal">
+        <article class="timeline-item">
+          <time>Degree</time>
+          <div>
+            <h3>Engineering</h3>
+            <p class="timeline-company">BITS Pilani · Birla Institute of Technology and Science</p>
+            <p>Foundations in engineering, computing, and problem solving that anchor a 17-year career across data, analytics, and AI.</p>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <time>Certifications</time>
+          <div>
+            <h3>Microsoft Azure Architect &amp; Power BI</h3>
+            <p class="timeline-company">Microsoft · Udemy</p>
+            <p>Microsoft Azure Architect Technologies, Exam 778 — Analyzing &amp; Visualizing Data with Power BI, plus Agile delivery and Power BI dashboards.</p>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <time>Credentials</time>
+          <div>
+            <h3>Big Data &amp; Industry Foundations</h3>
+            <p class="timeline-company">IBM</p>
+            <p>Big Data Hadoop Foundations and Retail Industry Foundations, backing enterprise-scale data engineering across global teams.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="recognition" class="section section-recognition" aria-labelledby="recognition-title">
+      <div class="section-number">07</div>
+      <div class="section-heading reveal">
+        <p class="eyebrow">Recognition</p>
+        <h2 id="recognition-title">Trusted by teams, recognised for delivery.</h2>
+      </div>
+      <div class="recognition-content reveal">
+        <div class="recognition-stats" aria-label="Profile highlights">
+          <div><strong>17+ yrs</strong><span>Data, analytics &amp; AI</span></div>
+          <div><strong>1K+</strong><span>LinkedIn followers</span></div>
+          <div><strong>8</strong><span>Peer recommendations</span></div>
         </div>
-        <div class="cv-preview">
-          <object data="Tanmoy_Stockholm_V4_1.pdf#view=FitH" type="application/pdf" aria-label="Preview of Tanmoy Santra's CV">
-            <p>Your browser cannot display the PDF preview. <a href="Tanmoy_Stockholm_V4_1.pdf">Open the CV</a>.</p>
-          </object>
+        <div class="testimonials">
+          <figure class="testimonial">
+            <blockquote>"Tanmoy is very professional, highly skilled and fast to adopt to new technologies. Friendly, fun and always willing to help — a true privilege to work with."</blockquote>
+            <figcaption>Hanna Eriksson · BI Developer, H&amp;M Group</figcaption>
+          </figure>
+          <figure class="testimonial">
+            <blockquote>"Tanmoy has always delivered. He never lets the team down, and balances quick execution with thoughtful proposals around requirements and design."</blockquote>
+            <figcaption>Robert Wallin · Engineering Lead</figcaption>
+          </figure>
+        </div>
+        <div class="recognition-awards">
+          <span>SPARK Award · IBM</span>
+          <span>Eminence &amp; Excellence · IBM</span>
+          <span>English — full professional</span>
+          <span>Swedish — elementary</span>
         </div>
       </div>
     </section>
 
     <section id="contact" class="contact-section" aria-labelledby="contact-title">
-      <p class="eyebrow">Start a conversation</p>
-      <h2 id="contact-title">Building a data or AI system that needs to work beyond the demo?</h2>
-      <div class="contact-links">
-        <a href="mailto:tanmoycuat@gmail.com">tanmoycuat@gmail.com <span aria-hidden="true">↗</span></a>
-        <a href="https://www.linkedin.com/in/tanmoysantra/" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+      <div class="contact-grid">
+        <div class="contact-copy">
+          <p class="eyebrow">Let's talk</p>
+          <h2 id="contact-title">Building a data or AI system that needs to work beyond the demo?</h2>
+          <p class="contact-lead">Whether you're exploring AI, need an enablement session, or want to collaborate — I'd love to hear from you.</p>
+          <div class="contact-links">
+            <a href="mailto:tanmoycuat@gmail.com">tanmoycuat@gmail.com <span aria-hidden="true">↗</span></a>
+            <a href="https://www.linkedin.com/in/tanmoysantra/" target="_blank" rel="noreferrer">Connect on LinkedIn <span aria-hidden="true">↗</span></a>
+          </div>
+          <p class="contact-note">Based in Stockholm, working globally. Open to speaking, advisory, and interesting collaborations.</p>
+        </div>
+        <form class="contact-form" aria-label="Contact form">
+          <label>
+            <span class="sr-only">Your name</span>
+            <input type="text" name="name" placeholder="Your name" autocomplete="name" required>
+          </label>
+          <label>
+            <span class="sr-only">Email</span>
+            <input type="email" name="email" placeholder="Email" autocomplete="email" required>
+          </label>
+          <label>
+            <span class="sr-only">Message</span>
+            <textarea name="message" placeholder="Message" rows="4" required></textarea>
+          </label>
+          <button class="button button-primary" type="submit">Send message <span aria-hidden="true">↗</span></button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
       </div>
     </section>
   </main>
